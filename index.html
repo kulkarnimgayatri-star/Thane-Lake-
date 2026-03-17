@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thane – City of Lakes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Landing Page / Intro Screen -->
+    <div id="landingPage" class="landing-page">
+        <!-- Hero Section based on reference image -->
+        <section class="landing-hero nav-padding">
+            <!-- Navigation specifically for the landing page -->
+            <nav class="landing-nav">
+                <div class="nav-brand">
+                    <span class="brand-icon"></span>
+                    Thane.
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#landingPage">Home</a></li>
+                    <li><a href="#about-journey"
+                            onclick="document.querySelector('.landing-content-section').scrollIntoView({behavior: 'smooth'}); return false;">About</a>
+                    </li>
+                    <li><a href="#contact"
+                            onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); return false;">Contact</a>
+                    </li>
+                    <li><a href="#suggestion"
+                            onclick="document.getElementById('suggestion').scrollIntoView({behavior: 'smooth'}); return false;">Suggest</a>
+                    </li>
+                </ul>
+                <div class="nav-logos">
+                    <img src="assets/images/logo/Enviro Vigil English logo .jpeg" alt="Enviro Vigil Logo" loading="lazy">
+                    <img src="assets/images/logo/Paryavaran Dakshat Mandal English Logo.jpg" alt="Paryavaran Dakshat Mandal Logo"
+                        loading="lazy">
+                </div>
+                <div class="mobile-menu-toggle" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="hero-badge-dot"></span>
+                    Thane · City of Lakes
+                </div>
+                <h1 class="hero-title">Explore the Soul<br>of Thane's<br>Lakes.</h1>
+                <p class="hero-text">A 42-week journey documenting the forgotten stories of over 60 lakes. Dive into
+                    centuries of biodiversity, culture, and heritage hidden within this city.</p>
+                <div class="hero-actions">
+                    <button id="heroExploreBtn" class="hero-btn-primary">Start Exploring</button>
+                    <button id="heroScrollBtn" class="hero-btn-outline">Read the Journey ↓</button>
+                </div>
+            </div>
+
+
+        <!-- Bottom Right Visits Counter -->
+        <div class="visits-badge">
+            <span class="visits-label">People visited our website</span>
+            <div id="visitorCount">0</div>
+        </div>
+
+        </section>
+
+        <!-- Content Section -->
+        <section id="about-journey" class="landing-content-section">
+            <div class="content-block intro-block scroll-anim">
+                <div class="text-content">
+                    <p>This journey began as a 42-week exploration, documenting the incredible lakes of Thane every
+                        Sunday. From Masunda Lake to Kamal Lake, we studied and shared the forgotten stories of these
+                        water bodies.</p>
+                </div>
+                <div class="image-content watermark-container">
+                    <img src="assets/images/lake-images/MASUNDA1.JPG" alt="Masunda Lake" class="rounded-image shadow-lg"
+                        loading="lazy">
+                    <div class="image-logos-overlay">
+                        <img src="assets/images/logo/Enviro Vigil English logo .jpeg" alt="Enviro Vigil Logo" loading="lazy">
+                        <img src="assets/images/logo/Paryavaran Dakshat Mandal English Logo.jpg" alt="Paryavaran Dakshat Mandal Logo"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-block reverse scroll-anim">
+                <div class="text-content">
+                    <p>Thane has long been known as the <strong>“City of Lakes”</strong>, with a history spanning nearly
+                        <strong>10–12 centuries</strong>. During the <strong>Shilahara period</strong>, King
+                        <strong>Bimba Raja</strong> chose Thane as the capital of Sashti for its natural richness,
+                        digging lakes in every locality for water supply. Temples of village deities were often built
+                        nearby, a tradition continued during the <strong>Yadav period</strong>.
+                    </p>
+                </div>
+                <div class="image-content watermark-container">
+                    <img src="assets/images/lake-images/UPVAN1.JPG" alt="Upvan Lake" class="rounded-image shadow-lg" loading="lazy">
+                    <div class="image-logos-overlay">
+                        <img src="assets/images/logo/Enviro Vigil English logo .jpeg" alt="Enviro Vigil Logo" loading="lazy">
+                        <img src="assets/images/logo/Paryavaran Dakshat Mandal English Logo.jpg" alt="Paryavaran Dakshat Mandal Logo"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-block scroll-anim">
+                <div class="text-content">
+                    <p>In modern times, clean-up efforts have unearthed <strong>ancient idols, sculptures, and
+                            inscriptions</strong>—such as the beautiful <strong>Brahma idol at Siddheshwar Lake</strong>
+                        and the <strong>Sheshashayi Vishnu idol and inscription at Kasarvadavali</strong>. These
+                        discoveries, now studied by the Archaeology Department, reveal profound historical details.
+                        While lakes like <strong>Masunda, Kacharli, Siddheshwar, Upavan, and Khidkali</strong> remain
+                        culturally significant, many others are disappearing due to <strong>urbanization, construction,
+                            and encroachments</strong>.</p>
+                </div>
+                <div class="image-content watermark-container">
+                    <img src="assets/images/lake-images/SIDDHESHWAR5.JPG" alt="Siddheshwar Lake" class="rounded-image shadow-lg"
+                        loading="lazy">
+                    <div class="image-logos-overlay">
+                        <img src="assets/images/logo/Enviro Vigil English logo .jpeg" alt="Enviro Vigil Logo" loading="lazy">
+                        <img src="assets/images/logo/Paryavaran Dakshat Mandal English Logo.jpg" alt="Paryavaran Dakshat Mandal Logo"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <div id="suggestion" class="content-block full-width suggestion-cta scroll-anim">
+                <div class="text-content center-text">
+                    <h2 class="cta-title">Suggestions and Experience</h2>
+                    <p class="cta-desc">you can share your Experience, Suggetion and images in this google form below
+                    </p>
+                    <a href="https://forms.gle/UQYDdWuKwuPB1C4d7" target="_blank" class="cta-button">Open Suggestion
+                        Form →</a>
+                </div>
+            </div>
+
+            <div class="content-block full-width scroll-anim">
+                <div class="text-content center-text">
+                    <p>Realizing this, we resolved to explore and document as many of Thane's sixty lakes as possible,
+                        reading texts and speaking with local experts. Our goal is simple: to spread awareness about
+                        their heritage. We hope that as people understand their responsibility, the <strong>natural
+                            beauty and environmental richness of Thane</strong> will be preserved for future
+                        generations.</p>
+                    <button id="startExploreBtn" class="explore-btn landing-btn mt-4">Start Exploring The Lakes</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="landing-contact-section scroll-anim">
+            <div class="contact-header">
+                <h2 class="contact-title">Paryavaran Dakshata Mandal</h2>
+            </div>
+                <div class="contact-cards">
+                    <a href="tel:+918104559681" class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.39 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.08 6.08l1.17-.96a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="contact-card-text">
+                            <span class="contact-card-label">Phone</span>
+                            <span class="contact-card-value">+91 81045 59681</span>
+                        </div>
+                    </a>
+                    <a href="mailto:mazatalaojune5@gmail.com" class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact-card-text">
+                            <span class="contact-card-label">Email</span>
+                            <span class="contact-card-value">mazatalaojune5@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/maza_talao?igsh=cmpneG85aHlpazF5" target="_blank"
+                        class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </div>
+                        <div class="contact-card-text">
+                            <span class="contact-card-label">Instagram</span>
+                            <span class="contact-card-value">@maza_talao</span>
+                        </div>
+                    </a>
+                    <a href="https://forms.gle/UQYDdWuKwuPB1C4d7" target="_blank" class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                            </svg>
+                        </div>
+                        <div class="contact-card-text">
+                            <span class="contact-card-label">Suggestions & Experience</span>
+                            <span class="contact-card-value">Share your Story</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+    </div>
+
+    <!-- Lakes Exploration Grid Section -->
+    <section id="explorationSection" class="exploration-section">
+        <div class="exploration-header">
+            <div class="header-content">
+                <div class="header-left">
+                    <button id="backToHomeBtn" class="back-btn">← Home</button>
+                    <h1>Thane</h1>
+                </div>
+                <div class="grid-search">
+                    <input type="text" id="searchLake" placeholder="Search lakes..." onkeyup="filterLakes()">
+                </div>
+                <div class="header-logos">
+                    <img src="assets/images/logo/Enviro Vigil English logo .jpeg" alt="Enviro Vigil Logo" loading="lazy">
+                    <img src="assets/images/logo/Paryavaran Dakshat Mandal English Logo.jpg" alt="Paryavaran Dakshat Mandal Logo"
+                        loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <div id="lakeGrid" class="lake-grid">
+            <!-- Lake card blocks injected by JS -->
+        </div>
+    </section>
+
+    <!-- Main Content Overlay -->
+    <!-- Explore section logic moved to #explorationSection -->
+
+    <!-- Details Modal -->
+    <div id="detailsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="collageGrid" class="collage-grid">
+                <!-- Collage images injected by JS -->
+            </div>
+            <div class="modal-info">
+                <h2 id="modalLakeName">Lake Name</h2>
+                <div class="divider"></div>
+                <p id="modalLakeDescription">Lake description will appear here.</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
